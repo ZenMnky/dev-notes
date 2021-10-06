@@ -80,9 +80,9 @@ Vue.use(Vuetify);
 // jest.config.js
 module.exports = {
 	// keep whatever preset was generated
-    // preset: '...'
+   	// preset: '...'
 	testMatch: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-    setupFilesAfterEnv: ['./testSetup.js'],
+ 	setupFilesAfterEnv: ['./testSetup.js'],
 };
 ```
 
