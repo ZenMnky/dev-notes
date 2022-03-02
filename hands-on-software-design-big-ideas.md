@@ -62,15 +62,14 @@ In the order of high to low priority.
 
 ## SLAP > SRP
 
-### Single Responsibility Principle
+### Single Responsibility Principle (SRP)
 - The reason for change for a function or a module of code should be minimal
 - *"Single Reason for Change Principle"*, may be a better way to understand this
 - This is really about cohesion
 - SRP should be in every level of the code - functions, classes, modules, applications, libraries...     
 
 
-### SLAP
-- 👉 **Single Level of Abstraction Principle (SLAP)**
+### 👉 **Single Level of Abstraction Principle (SLAP)**
 - A long or short function is not about the number of lines of code. It's about the number of levels of details or abstraction that the function deals with.
 
 Example of SLAP:
