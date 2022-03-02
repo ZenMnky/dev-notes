@@ -74,13 +74,33 @@ In the order of high to low priority.
 
 Example of SLAP:
 ```js
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let result = 0;
+
+for(let i = 0; i < numbers.length; i++) {
+  if(numbers[i] % 2 === 0) {
+    result += numbers[i] * 2;
+  }
+}
+
+console.log(result);
+
+//this code is very familiar but not simple
+//it lacks cohesion and also fails SLAP
+
+//Also, this is imperative style which has more accidental complexity
+//Functional style code, if done well, has less accidental complexity.
+
+//  ------------------------------------------------------------------
+
 const number = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const result = numbers.filter((e) => return e % 2 === 0)
 	.map(e => e * 2)
 	.reduce((total, e) => total + e)
 
-// not too noisy, and kind of easy to read
+// less too noisy; a bit easier to read
 // still cohesive
 // But, still leaves us wanting more - 
 // still some cognitive load
